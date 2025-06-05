@@ -1,0 +1,229 @@
+/* ======= 通用設定 ======= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfaf6;
+    color: #333;
+  }
+  a {
+    color: #5a4fcf;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #d13f87;
+  }
+  
+  /* ======= 導覽列 ======= */
+  #top {
+    background-color: #485f92;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .top_a {
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+  }
+  .top_a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    text-decoration: none;
+    background-color: #8de0e6;
+  }
+  
+  /* ======= 表格樣式 ======= */
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 30px auto;
+    background: #fff8dc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  th, td {
+    padding: 20px;
+    vertical-align: top;
+    text-align: left;
+  }
+  th {
+    background-color: #ffe066;
+    font-size: 1.2em;
+    position: relative;
+  }
+  th p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #666;
+  }
+  ul {
+    list-style: disc inside;
+    line-height: 1.8;
+    padding-left: 20px;
+  }
+
+  /* ======= 首頁自我介紹區塊 ======= */
+  .intro{
+    background-color: #8dc2e6;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .intro-section {
+    background-color: #f8efc5;
+    padding: 25px 30px;
+    box-shadow: 0 6px 15px rgba(191, 178, 59, 0.2);
+    font-size: 1.2em;
+    color: #4e2828;
+    line-height: 1.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .intro-section:hover {
+    box-shadow: 0 10px 25px rgba(191, 134, 59, 0.4);
+  }
+  
+  .intro-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #bf653b;
+    border-bottom: 3px solid #bf653b;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-section ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    color: #bf653b;
+  }
+  
+  .intro-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .highlight {
+    color: #bf653b;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 768px) {
+    .intro-section {
+      padding: 20px 15px;
+      margin: 20px 15px;
+      font-size: 1em;
+    }
+  }
+  
+  /* ======= 學校圖片區塊 ======= */
+  .school-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  .school-card {
+    width: 25%;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  .school-card img {
+    width: 100%;
+    height: auto;
+  }
+  .school-card:hover {
+    transform: translateY(-5px);
+  }
+  .school-card figcaption {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  /* ======= 影片與作業區塊 ======= */
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+  }
+  .video-card {
+    width: 60%;
+  }
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  .video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .video-card figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .link-card {
+    width: 30%;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  .link-card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .hw_a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #e8e8ff;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .hw_a:hover {
+    background: #cfcfff;
+    transform: scale(1.05);
+  }
+  /* ======= 響應式 ======= */
+  /*螢幕寬度小於或等於 768 像素*/
+  @media (max-width: 768px) {
+    .school-card, .video-card, .link-card {
+      width: 90%;
+    }
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    #top {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
