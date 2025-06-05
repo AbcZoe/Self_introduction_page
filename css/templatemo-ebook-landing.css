@@ -575,7 +575,7 @@ strong {
 .hero-section .row {
   position: relative;
   z-index: 22;
-  top: 100px;
+  top: 10px;
 }
 
 .hero-image {
@@ -589,7 +589,7 @@ strong {
 @media screen and (min-width: 991px) {
   .hero-section {
     height: calc(90vh - 88px);
-    padding-top: 350px;
+    padding-top: 250px;
   }
 }
 
@@ -775,12 +775,10 @@ strong {
 }
 
 .author-image {
-  border: 10px solid var(--secondary-color);
-  border-radius: 100%;
   display: block;
   margin: auto;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 150px;
   object-fit: cover;
 }
 
